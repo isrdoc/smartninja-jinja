@@ -10,5 +10,15 @@
     <body>
         {% block content %}
         {% endblock content %}
+
+        {% if people %}
+            <h2>People</h2>
+
+            <ul>
+            {% for person in people %}
+                <li>{{person}}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
     </body>
 </html>

@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 
-{% block title %}Homepage{% endblock title %}
+{% block title %}{{title}}{% endblock title %}
 
-{% block content %}<h1>Welcome to Jinja!</h1>{% endblock content %}
+{% block content %}
+<h1>Welcome to Jinja!</h1>
+<p>The time is: {{time_now}}</p>
+{% endblock content %}
