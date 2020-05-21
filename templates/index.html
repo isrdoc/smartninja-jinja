@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>SmartNinja with Jinja</title>
+{% extends "base.html" %}
 
-        <link rel="stylesheet" href="/static/css/style.css">
-    </head>
+{% block title %}Homepage{% endblock title %}
 
-    <body>
-        <h1>Let's try out Jinja!</h1>
-    </body>
-</html>
+{% block content %}<h1>Welcome to Jinja!</h1>{% endblock content %}
